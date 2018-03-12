@@ -42,6 +42,27 @@ class ArticleHook extends \System {
             }
             $tpl->article_visible = $article_visible;
 
+            // article width
+            if($tpl->article_width) {
+                $tpl->article_width = ' '.$tpl->article_width;
+            }
+
+            // article vertical padding
+            if($tpl->article_padding_top_bottom) {
+                $tpl->article_padding_top_bottom = ' '.$tpl->article_padding_top_bottom;
+                if($tpl->article_padding_top_bottom_width) {
+                    $tpl->article_padding_top_bottom = substr_replace($tpl->article_padding_top_bottom, "-".$tpl->article_padding_top_bottom_width, strrpos($tpl->article_padding_top_bottom, "-"), 0);
+                }
+            }
+
+            // article horizontal padding
+            if($tpl->article_padding_right_left) {
+                $tpl->article_padding_right_left = ' '.$tpl->article_padding_right_left;
+                if($tpl->article_padding_right_left_width) {
+                    $tpl->article_padding_right_left = substr_replace($tpl->article_padding_right_left, "-".$tpl->article_padding_right_left_width, strrpos($tpl->article_padding_right_left, "-"), 0);
+                }
+            }
+
             // no-gutters
             if($tpl->article_elements_no_gutters != '') {
                 $tpl->article_elements_no_gutters = ' '.$tpl->article_elements_no_gutters;

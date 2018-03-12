@@ -47,7 +47,6 @@
 
       <trans-unit id="tl_layout.gridXL.0">
         <source>XL-Grid Breakpoint:</source>
-        <target>XL-Grid Breakpoint:</target>
       </trans-unit>
       <trans-unit id="tl_layout.gridXL.1">
         <source>Bootstrap: 1200px</source>

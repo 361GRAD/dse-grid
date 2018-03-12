@@ -320,7 +320,7 @@ class tl_content_grid extends tl_content
                 continue;
             }
 
-            $GLOBALS['TL_DCA']['tl_content']['palettes'][$key] = $value . ';{grid_legend:hide},grid_xs,grid_sm,grid_md,grid_lg,grid_xl;{grid_visible_legend:hide},grid_hidden,grid_visible;{col_no_padding_legend:hide},col_no_padding;{grid_offset_legend:hide},offset_xs,offset_sm,offset_md,offset_lg,offset_xl;{grid_order_legend:hide},order_xs,order_sm,order_md,order_lg,order_xl;{element_vertical_alignment_label},element_vertical_alignment,element_vertical_alignment_width';
+            $GLOBALS['TL_DCA']['tl_content']['palettes'][$key] = $value . ';{grid_legend:hide},grid_xs,grid_sm,grid_md,grid_lg,grid_xl;{grid_visible_legend:hide},grid_hidden,grid_visible;{col_no_padding_legend:hide},col_no_padding;{grid_offset_legend:hide},offset_xs,offset_sm,offset_md,offset_lg,offset_xl;{grid_order_legend:hide},order_xs,order_sm,order_md,order_lg,order_xl;{element_position_label},element_vertical_alignment,element_vertical_alignment_width';
         }
     }
 }

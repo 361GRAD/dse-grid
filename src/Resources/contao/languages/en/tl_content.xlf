@@ -198,6 +198,9 @@
                 <source>bottom</source>
             </trans-unit>
 
+            <trans-unit id="tl_content.element_position_label">
+                <source>Position</source>
+            </trans-unit>
             <trans-unit id="tl_content.element_vertical_alignment_width.0">
                 <source>Vertical position from:</source>
             </trans-unit>

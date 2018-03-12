@@ -15,7 +15,7 @@
 /**
  * Add palettes to tl_article
  */
-$GLOBALS['TL_DCA']['tl_article']['palettes']['default'] = str_replace('cssID;','cssID;{visibility_legend:hide},article_hidden,article_visible;{article_elements_setting_legend:hide},article_elements_no_gutters,article_elements_vertical_alignment,article_elements_vertical_alignment_width,article_elements_horizontal_alignment,article_elements_horizontal_alignment_width;', $GLOBALS['TL_DCA']['tl_article']['palettes']['default']);
+$GLOBALS['TL_DCA']['tl_article']['palettes']['default'] = str_replace('cssID;','cssID;{visibility_legend:hide},article_hidden,article_visible;{article_settings_legend:hide},article_width,article_padding_top_bottom,article_padding_top_bottom_width,article_padding_right_left,article_padding_right_left_width;{article_elements_setting_legend:hide},article_elements_no_gutters,article_elements_vertical_alignment,article_elements_vertical_alignment_width,article_elements_horizontal_alignment,article_elements_horizontal_alignment_width;', $GLOBALS['TL_DCA']['tl_article']['palettes']['default']);
 
 /**
  * Add fields to tl_article
@@ -64,6 +64,111 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['article_visible'] = array (
     'sql'       => "varchar(500) NOT NULL default ''"
 );
 
+// ARTICLE WIDTH
+$GLOBALS['TL_DCA']['tl_article']['fields']['article_width'] = array(
+    'label' => &$GLOBALS['TL_LANG']['tl_article']['article_width'],
+    'exclude' => true,
+    'search' => false,
+    'inputType' => 'select',
+    'options' => array(
+        'container-fluid'
+    ),
+    'reference' => &$GLOBALS['TL_LANG']['tl_article']['article_width_options'],
+    'eval' => array(
+        'includeBlankOption' => true,
+        'mandatory' => false,
+        'maxlength' => 255,
+        'tl_class' => 'w50 clr'
+    ),
+    'sql' => "varchar(255) NOT NULL default ''"
+);
+
+// ARTICLE PADDING
+$GLOBALS['TL_DCA']['tl_article']['fields']['article_padding_top_bottom'] = array(
+    'label' => &$GLOBALS['TL_LANG']['tl_article']['article_padding_top_bottom'],
+    'exclude' => true,
+    'search' => false,
+    'inputType' => 'select',
+    'options' => array(
+        'py-0',
+        'py-1',
+        'py-2',
+        'py-3',
+        'py-4',
+        'py-5'
+    ),
+    'reference' => &$GLOBALS['TL_LANG']['tl_article']['article_padding_top_bottom_options'],
+    'eval' => array(
+        'includeBlankOption' => true,
+        'mandatory' => false,
+        'maxlength' => 255,
+        'tl_class' => 'w50 clr'
+    ),
+    'sql' => "varchar(255) NOT NULL default ''"
+);
+$GLOBALS['TL_DCA']['tl_article']['fields']['article_padding_top_bottom_width'] = array(
+    'label' => &$GLOBALS['TL_LANG']['tl_article']['article_padding_top_bottom_width'],
+    'exclude' => true,
+    'search' => false,
+    'inputType' => 'select',
+    'options' => array(
+        'sm',
+        'md',
+        'lg',
+        'xl'
+    ),
+    'reference' => &$GLOBALS['TL_LANG']['tl_article']['article_padding_top_bottom_width_options'],
+    'eval' => array(
+        'includeBlankOption' => true,
+        'mandatory' => false,
+        'maxlength' => 255,
+        'tl_class' => 'w50'
+    ),
+    'sql' => "varchar(255) NOT NULL default ''"
+);
+$GLOBALS['TL_DCA']['tl_article']['fields']['article_padding_right_left'] = array(
+    'label' => &$GLOBALS['TL_LANG']['tl_article']['article_padding_right_left'],
+    'exclude' => true,
+    'search' => false,
+    'inputType' => 'select',
+    'options' => array(
+        'px-0',
+        'px-1',
+        'px-2',
+        'px-3',
+        'px-4',
+        'px-5'
+    ),
+    'reference' => &$GLOBALS['TL_LANG']['tl_article']['article_padding_right_left_options'],
+    'eval' => array(
+        'includeBlankOption' => true,
+        'mandatory' => false,
+        'maxlength' => 255,
+        'tl_class' => 'w50 clr'
+    ),
+    'sql' => "varchar(255) NOT NULL default ''"
+);
+$GLOBALS['TL_DCA']['tl_article']['fields']['article_padding_right_left_width'] = array(
+    'label' => &$GLOBALS['TL_LANG']['tl_article']['article_padding_right_left_width'],
+    'exclude' => true,
+    'search' => false,
+    'inputType' => 'select',
+    'options' => array(
+        'sm',
+        'md',
+        'lg',
+        'xl'
+    ),
+    'reference' => &$GLOBALS['TL_LANG']['tl_article']['article_padding_right_left_width_options'],
+    'eval' => array(
+        'includeBlankOption' => true,
+        'mandatory' => false,
+        'maxlength' => 255,
+        'tl_class' => 'w50'
+    ),
+    'sql' => "varchar(255) NOT NULL default ''"
+);
+
 // ARTICLE-ELEMENTS
 $GLOBALS['TL_DCA']['tl_article']['fields']['article_elements_no_gutters'] = array(
     'label' => &$GLOBALS['TL_LANG']['tl_article']['article_elements_no_gutters'],
@@ -80,7 +185,7 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['article_elements_no_gutters'] = arra
         'maxlength' => 255,
         'tl_class' => 'w50 clr'
     ),
-    'sql' => "varchar(32) NOT NULL default ''"
+    'sql' => "varchar(255) NOT NULL default ''"
 );
 $GLOBALS['TL_DCA']['tl_article']['fields']['article_elements_vertical_alignment'] = array(
     'label' => &$GLOBALS['TL_LANG']['tl_article']['article_elements_vertical_alignment'],
@@ -99,7 +204,7 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['article_elements_vertical_alignment'
         'maxlength' => 255,
         'tl_class' => 'w50 clr'
     ),
-    'sql' => "varchar(32) NOT NULL default ''"
+    'sql' => "varchar(255) NOT NULL default ''"
 );
 $GLOBALS['TL_DCA']['tl_article']['fields']['article_elements_vertical_alignment_width'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_article']['article_elements_vertical_alignment_width'],
@@ -114,10 +219,10 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['article_elements_vertical_alignment_
     'eval'      => array(
         'includeBlankOption' => true,
         'mandatory' => false,
-        'maxlength' => 500,
+        'maxlength' => 255,
         'tl_class' => 'w50'
     ),
-    'sql'       => "varchar(500) NOT NULL default ''"
+    'sql'       => "varchar(255) NOT NULL default ''"
 );
 
 $GLOBALS['TL_DCA']['tl_article']['fields']['article_elements_horizontal_alignment'] = array(
@@ -139,7 +244,7 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['article_elements_horizontal_alignmen
         'maxlength' => 255,
         'tl_class' => 'w50 clr'
     ),
-    'sql' => "varchar(32) NOT NULL default ''"
+    'sql' => "varchar(255) NOT NULL default ''"
 );
 $GLOBALS['TL_DCA']['tl_article']['fields']['article_elements_horizontal_alignment_width'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_article']['article_elements_horizontal_alignment_width'],
@@ -154,8 +259,8 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['article_elements_horizontal_alignmen
     'eval'      => array(
         'includeBlankOption' => true,
         'mandatory' => false,
-        'maxlength' => 500,
+        'maxlength' => 255,
         'tl_class' => 'w50'
     ),
-    'sql'       => "varchar(500) NOT NULL default ''"
+    'sql'       => "varchar(255) NOT NULL default ''"
 );

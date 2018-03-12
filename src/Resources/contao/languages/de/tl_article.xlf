@@ -64,6 +64,139 @@
         <target>XL</target>
       </trans-unit>
 
+      <trans-unit id="tl_article.article_settings_legend">
+        <source>Article settings</source>
+        <target>Artikel-Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_width.0">
+        <source>Width:</source>
+        <target>Breite:</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_width.1">
+        <source>Width of the article.</source>
+        <target>Breite des Artikels.</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_width_options.container-fluid">
+        <source>full width</source>
+        <target>volle Breite</target>
+      </trans-unit>
+
+      <trans-unit id="tl_article.article_padding_top_bottom.0">
+        <source>Vertical padding:</source>
+        <target>Vertikaler Abstand</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom.1">
+        <source>Vertical padding for this article.</source>
+        <target>Vertikaler Abstand für diesen Artikel.</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_options.py-0">
+        <source>remove padding</source>
+        <target>entfernen</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_options.py-1">
+        <source>1/4x padding</source>
+        <target>1/4x Padding</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_options.py-2">
+        <source>1/2x padding</source>
+        <target>1/2x Padding</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_options.py-3">
+        <source>normal padding</source>
+        <target>normales Padding</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_options.py-4">
+        <source>1.5x padding</source>
+        <target>1.5x Padding</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_options.py-5">
+        <source>3x padding</source>
+        <target>3x Padding</target>
+      </trans-unit>
+
+      <trans-unit id="tl_article.article_padding_top_bottom_width.0">
+        <source>Vertical padding from:</source>
+        <target>Vertikaler Abstand ab:</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_width.1">
+        <source>Width from where the vertical padding is set.</source>
+        <target>Ab welcher Breite der vertikale Abstand angewendet werden soll.</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_width_options.sm">
+        <source>SM</source>
+        <target>SM</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_width_options.md">
+        <source>MD</source>
+        <target>MD</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_width_options.lg">
+        <source>LG</source>
+        <target>LG</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_width_options.xl">
+        <source>XL</source>
+        <target>XL</target>
+      </trans-unit>
+
+      <trans-unit id="tl_article.article_padding_right_left.0">
+        <source>Horizontal padding:</source>
+        <target>Horizontaler Abstand</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_right_left.1">
+        <source>Horizontal padding for this article.</source>
+        <target>Horizontaler Abstand für diesen Artikel.</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_right_left_options.px-0">
+        <source>remove padding</source>
+        <target>entfernen</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_right_left_options.px-1">
+        <source>1/4x padding</source>
+        <target>1/4x Padding</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_right_left_options.px-2">
+        <source>1/2x padding</source>
+        <target>1/2x Padding</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_right_left_options.px-3">
+        <source>normal padding</source>
+        <target>normales Padding</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_right_left_options.px-4">
+        <source>1.5x padding</source>
+        <target>1.5x Padding</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_right_left_options.px-5">
+        <source>3x padding</source>
+        <target>3x Padding</target>
+      </trans-unit>
+
+      <trans-unit id="tl_article.article_padding_right_left_width.0">
+        <source>Horizontal padding from:</source>
+        <target>Horizontaler Abstand ab:</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_right_left_width.1">
+        <source>Width from where the horizontal padding is set.</source>
+        <target>Ab welcher Breite der horizontale Abstand angewendet werden soll.</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_right_left_width_options.sm">
+        <source>SM</source>
+        <target>SM</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_right_left_width_options.md">
+        <source>MD</source>
+        <target>MD</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_right_left_width_options.lg">
+        <source>LG</source>
+        <target>LG</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_right_left_width_options.xl">
+        <source>XL</source>
+        <target>XL</target>
+      </trans-unit>
+
       <trans-unit id="tl_article.article_elements_setting_legend">
         <source>Element settings</source>
         <target>Element-Einstellungen</target>
@@ -162,7 +295,7 @@
       </trans-unit>
       <trans-unit id="tl_article.article_elements_horizontal_alignment_width.1">
         <source>Width from where the vertical position is set.</source>
-        <target>Ab welcher Breite die horizontale Position angewendert werden soll.</target>
+        <target>Ab welcher Breite die horizontale Position angewendet werden soll.</target>
       </trans-unit>
       <trans-unit id="tl_article.article_elements_horizontal_alignment_width_options.sm">
         <source>SM</source>

@@ -259,6 +259,10 @@
         <target>unten</target>
       </trans-unit>
 
+      <trans-unit id="tl_content.element_position_label">
+        <source>Position</source>
+        <target>Position</target>
+      </trans-unit>
       <trans-unit id="tl_content.element_vertical_alignment_width.0">
         <source>Vertical position from:</source>
         <target>Vertikale Position ab:</target>
