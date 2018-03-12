@@ -21,11 +21,11 @@
   },
   "autoload": {
     "psr-4": {
-      "Dse\\ElementsBundle\\DseArticlesExtension\\": "src"
+      "Dse\\ElementsBundle\\DseGridExtension\\": "src"
     }
   },
   "extra": {
-    "contao-manager-plugin":"Dse\\ElementsBundle\\DseArticlesExtension\\ContaoManager\\Plugin",
+    "contao-manager-plugin":"Dse\\ElementsBundle\\DseGridExtension\\ContaoManager\\Plugin",
     "branch-alias": {
       "dev-master": "1.2.x-dev"
     }
