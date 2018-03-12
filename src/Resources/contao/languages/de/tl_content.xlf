@@ -1,0 +1,288 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+	<file datatype="php" original="src/Resources/contao/languages/en/default.php" source-language="en" target-langue="de">
+    <body>
+      <trans-unit id="tl_content.grid_legend">
+          <source>Grid settings</source>
+        <target>Grid-Einstellungen</target>
+      </trans-unit>
+
+      <trans-unit id="tl_content.grid_xs.0">
+        <source>XS width:</source>
+        <target>XS-Breite:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_xs.1">
+        <source>Bootstrap: Viewport smaller than 576px.</source>
+        <target>Bootstrap: Viewport kleiner als 576px.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_content.grid_sm.0">
+        <source>SM width:</source>
+        <target>SM-Breite:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_sm.1">
+        <source>Bootstrap: Viewport is greater than or equal to 576px.</source>
+        <target>Bootstrap: Viewport ist größer oder gleich 576px.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_content.grid_md.0">
+        <source>MD width:</source>
+        <target>MD-Breite:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_md.1">
+        <source>Bootstrap: Viewport is greater than or equal to 768px.</source>
+        <target>Bootstrap: Viewport ist größer oder gleich 768px.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_content.grid_lg.0">
+        <source>LG width:</source>
+        <target>LG-Breite:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_lg.1">
+        <source>Bootstrap: Viewport is greater than or equal to 992px.</source>
+        <target>Bootstrap: Viewport ist größer oder gleich 992px.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_content.grid_xl.0">
+        <source>XL width:</source>
+        <target>XL-Breite:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_xl.1">
+        <source>Bootstrap: Viewport is greater than or equal to 1200px.</source>
+        <target>Bootstrap: Viewport ist größer oder gleich 1200px.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_content.grid_visible_legend">
+        <source>Visibility</source>
+        <target>Sichtbarkeit</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_visible.0">
+        <source>Show in:</source>
+        <target>Anzeigen in:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_visible.1">
+        <source>Show this element in the selected width.</source>
+        <target>Zeigt dieses Element in der gewählten Breite an.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_visible.d-xs-block">
+        <source>XS</source>
+        <target>XS</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_visible.d-sm-block">
+        <source>SM</source>
+        <target>SM</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_visible.d-md-block">
+        <source>MD</source>
+        <target>MD</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_visible.d-lg-block">
+        <target>LG</target>
+        <source>LG</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_visible.d-xl-block">
+        <target>XL</target>
+        <source>XL</source>
+      </trans-unit>
+
+      <trans-unit id="tl_content.grid_hidden.0">
+        <source>Hide in:</source>
+        <target>Ausblenden in:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_hidden.1">
+        <source>Hides this element in the selected width.</source>
+        <target>Blendet dieses Element in der ausgewählten Breite aus.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_hidden.d-xs-none">
+        <source>XS</source>
+        <target>XS</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_hidden.d-sm-none">
+        <source>SM</source>
+        <target>SM</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_hidden.d-md-none">
+        <source>MD</source>
+        <target>MD</target>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_hidden.d-lg-none">
+        <target>LG</target>
+        <source>LG</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grid_hidden.d-xl-none">
+        <target>XL</target>
+        <source>XL</source>
+      </trans-unit>
+
+      <trans-unit id="tl_content.col_no_padding_legend">
+        <source>padding</source>
+        <target>Abstand</target>
+      </trans-unit>
+      <trans-unit id="tl_content.col_no_padding.0">
+        <source>Remove padding</source>
+        <target>Padding entfernen</target>
+      </trans-unit>
+      <trans-unit id="tl_content.px-0">
+        <source>left and right</source>
+        <target>links und rechts</target>
+      </trans-unit>
+      <trans-unit id="tl_content.py-0">
+        <source>top and bottom</source>
+        <target>oben und unten</target>
+      </trans-unit>
+      <trans-unit id="tl_content.p-0">
+        <source>all</source>
+        <target>überall</target>
+      </trans-unit>
+
+      <trans-unit id="tl_content.col_no_padding.1">
+        <source>Remove padding from element.</source>
+        <target>Entfernt das Padding vom Element.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.col_no_padding.1">
+        <source>Remove padding from element.</source>
+        <target>Entfernt das Padding vom Element.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.col_no_padding.1">
+        <source>Remove padding from element.</source>
+        <target>Entfernt das Padding vom Element.</target>
+      </trans-unit>
+
+	  <trans-unit id="tl_content.grid_offset_legend">
+        <source>Offset settings</source>
+        <target>Offset-Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="tl_content.offset_xs.0">
+        <source>XS offset:</source>
+        <target>XS-Offset:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.offset_xs.1">
+        <source>Offset of the element.</source>
+        <target>Offset des Element.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.offset_sm.0">
+        <source>SM offset:</source>
+        <target>SM-Offset:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.offset_sm.1">
+        <source>Offset of the element in SM width.</source>
+        <target>Offset des Element ab SM-Breite.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.offset_md.0">
+        <source>MD offset:</source>
+        <target>MD-Offset:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.offset_md.1">
+        <source>Offset of the element in MD width.</source>
+        <target>Offset des Element ab MD-Breite.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.offset_lg.0">
+        <source>LG offset:</source>
+        <target>LG-Offset:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.offset_lg.1">
+        <source>Offset of the element in LG width.</source>
+        <target>Offset des Element ab LG-Breite.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.offset_xl.0">
+        <source>XL offset:</source>
+        <target>XL-Offset:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.offset_xl.1">
+        <source>Offset of the element in XL width.</source>
+        <target>Offset des Element ab XL-Breite.</target>
+      </trans-unit>
+
+	  <trans-unit id="tl_content.grid_order_legend">
+	    <source>Order settings</source>
+		<target>Reihenfolge-Einstellungen</target>
+	  </trans-unit>
+	  <trans-unit id="tl_content.order_xs.0">
+	    <source>Order from XS width:</source>
+		<target>Reihenfolge ab XS-Breite:</target>
+	  </trans-unit>
+	  <trans-unit id="tl_content.order_xs.1">
+	    <source>Order the element in the XS width.</source>
+		<target>Reihenfolge des Elements ab der XS-Breite.</target>
+	  </trans-unit>
+      <trans-unit id="tl_content.order_sm.0">
+        <source>Order from SM width:</source>
+        <target>Reihenfolge ab SM-Breite:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.order_sm.1">
+        <source>Order the element in the SM width.</source>
+        <target>Reihenfolge des Elements ab der SM-Breite.</target>
+      </trans-unit>
+	  <trans-unit id="tl_content.order_md.0">
+          <source>Order from MD width:</source>
+          <target>Reihenfolge ab MD-Breite:</target>
+	  </trans-unit>
+	  <trans-unit id="tl_content.order_md.1">
+          <source>Order the element in the MD width.</source>
+          <target>Reihenfolge des Elements ab der MD-Breite.</target>
+	  </trans-unit>
+	  <trans-unit id="tl_content.order_lg.0">
+          <source>Order from LG width:</source>
+          <target>Reihenfolge ab LG-Breite:</target>
+	  </trans-unit>
+	  <trans-unit id="tl_content.order_lg.1">
+          <source>Order the element in the LG width.</source>
+          <target>Reihenfolge des Elements ab der LG-Breite.</target>
+	  </trans-unit>
+	  <trans-unit id="tl_content.order_xl.0">
+          <source>Order from XL width:</source>
+          <target>Reihenfolge ab XL-Breite:</target>
+	  </trans-unit>
+	  <trans-unit id="tl_content.order_xl.1">
+          <source>Order the element in the XL width.</source>
+          <target>Reihenfolge des Elements ab der XL-Breite.</target>
+	  </trans-unit>
+
+      <trans-unit id="tl_content.element_vertical_alignment.0">
+        <source>Vertical position:</source>
+        <target>Vertikale Position:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.element_vertical_alignment.1">
+        <source>Defines the vertical position of the elements.</source>
+        <target>Gibt die vertikale Position des Elements an.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.element_vertical_alignment_options.align-self-start">
+        <source>top</source>
+        <target>oben</target>
+      </trans-unit>
+      <trans-unit id="tl_content.element_vertical_alignment_options.align-self-center">
+        <source>center</source>
+        <target>mittig</target>
+      </trans-unit>
+      <trans-unit id="tl_content.element_vertical_alignment_options.align-self-end">
+        <source>bottom</source>
+        <target>unten</target>
+      </trans-unit>
+
+      <trans-unit id="tl_content.element_vertical_alignment_width.0">
+        <source>Vertical position from:</source>
+        <target>Vertikale Position ab:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.element_vertical_alignment_width.1">
+        <source>Width from where the vertical position is set.</source>
+        <target>Ab welcher Breite die vertikale Position angewendet werden soll.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.element_vertical_alignment_width_options.sm">
+        <source>SM</source>
+        <target>SM</target>
+      </trans-unit>
+      <trans-unit id="tl_content.element_vertical_alignment_width_options.md">
+        <source>MD</source>
+        <target>MD</target>
+      </trans-unit>
+      <trans-unit id="tl_content.element_vertical_alignment_width_options.lg">
+        <source>LG</source>
+        <target>LG</target>
+      </trans-unit>
+      <trans-unit id="tl_content.element_vertical_alignment_width_options.xl">
+        <source>XL</source>
+        <target>XL</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

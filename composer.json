@@ -1,0 +1,33 @@
+{
+  "name": "361GRAD-Elements/dse-grid",
+  "type": "contao-bundle",
+  "description": "361GRAD-Element - grid extension",
+  "license": "proprietary",
+  "homepage": "http://361.de",
+  "authors": [
+    {
+      "name": "Markus Häfner",
+      "email": "markus@361.de",
+      "homepage": "http://361.de",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "contao/core-bundle": "~4.4"
+  },
+  "require-dev": {
+    "phpcq/all-tasks": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dse\\ElementsBundle\\DseArticlesExtension\\": "src"
+    }
+  },
+  "extra": {
+    "contao-manager-plugin":"Dse\\ElementsBundle\\DseArticlesExtension\\ContaoManager\\Plugin",
+    "branch-alias": {
+      "dev-master": "1.2.x-dev"
+    }
+  }
+}

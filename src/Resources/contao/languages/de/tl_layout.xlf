@@ -1,0 +1,177 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/default.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="tl_layout.activate_legend">
+        <source>DSE Grid settings</source>
+        <target>DSE-Grid-Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.activateCArticles.0">
+        <source>Activate the DSE grid</source>
+        <target>DSE-Grid aktivieren</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.activateCArticles.1">
+        <source>Activates the DSE grid for this pagetree</source>
+        <target>Aktiviert das DSE-Grid für dieses Layout</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.grid_legend">
+        <source>Grid breakpoints</source>
+        <target>Grid-Breakpoints</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.width_legend">
+        <source>Width settings</source>
+        <target>Breiten-Einstellungen</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.padding_legend">
+        <source>Padding settings</source>
+        <target>Abstand-Einstellungen</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.gridSM.0">
+        <source>SM-Grid Breakpoint:</source>
+        <target>SM-Grid Breakpoint:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.gridSM.1">
+        <source>Bootstrap: 540px</source>
+        <target>Bootstrap: 540px</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.gridMD.0">
+        <source>MD-Grid Breakpoint:</source>
+        <target>MD-Grid Breakpoint:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.gridMD.1">
+        <source>Bootstrap: 768px</source>
+        <target>Bootstrap: 768px</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.gridLG.0">
+        <source>LG-Grid Breakpoint:</source>
+        <target>LG-Grid Breakpoint:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.gridLG.1">
+        <source>Bootstrap: 992px</source>
+        <target>Bootstrap: 992px</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.gridXL.0">
+        <source>XL-Grid Breakpoint:</source>
+        <target>XL-Grid Breakpoint:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.gridXL.1">
+        <source>Bootstrap: 1200px</source>
+        <target>Bootstrap: 1200px</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.widthSM.0">
+        <source>SM-Grid Width:</source>
+        <target>SM-Grid Breite:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.widthSM.1">
+        <source>Width of the Grid (should be less than the breakpoint)</source>
+        <target>Breite des Grids (sollte kleiner sein als der entsprechenden Breakpoint)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.widthMD.0">
+        <source>MD-Grid Width:</source>
+        <target>MD-Grid Breite:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.widthMD.1">
+        <source>Width of the Grid (should be less than the breakpoint)</source>
+        <target>Breite des Grids (sollte kleiner sein als der entsprechenden Breakpoint)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.widthLG.0">
+        <source>LG-Grid Width:</source>
+        <target>LG-Grid Breite:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.widthLG.1">
+        <source>Width of the Grid (should be less than the breakpoint)</source>
+        <target>Breite des Grids (sollte kleiner sein als der entsprechenden Breakpoint)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.widthXL.0">
+        <source>XL-Grid Width:</source>
+        <target>XL-Grid Breite:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.widthXL.1">
+        <source>Width of the Grid (should be less than the breakpoint)</source>
+        <target>Breite des Grids (sollte kleiner sein als der entsprechenden Breakpoint)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingTopSM.0">
+        <source>SM-Padding Top</source>
+        <target>SM-Padding Oben:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingTopSM.1">
+        <source>Padding of each Article (Top)</source>
+        <target>Padding jedes Artikels (oben)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingTopMD.0">
+        <source>MD-Padding Top</source>
+        <target>MD-Padding Oben:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingTopMD.1">
+        <source>Padding of each Article (Top)</source>
+        <target>Padding jedes Artikels (oben)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingTopLG.0">
+        <source>LG-Padding Top</source>
+        <target>LG-Padding Oben:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingTopLG.1">
+        <source>Padding of each Article (Top)</source>
+        <target>Padding jedes Artikels (oben)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingTopXL.0">
+        <source>XL-Padding Top</source>
+        <target>XL-Padding Oben:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingTopXL.1">
+        <source>Padding of each Article (Top)</source>
+        <target>Padding jedes Artikels (oben)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingBottomSM.0">
+        <source>SM-Padding Bottom:</source>
+        <target>SM-Padding Unten:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingBottomSM.1">
+        <source>Padding of each Article (Bottom)</source>
+        <target>Padding jedes Artikels (unten)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingBottomMD.0">
+        <source>MD-Padding Bottom:</source>
+        <target>MD-Padding Unten:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingBottomMD.1">
+        <source>Padding of each Article (Bottom)</source>
+        <target>Padding jedes Artikels (unten)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingBottomLG.0">
+        <source>LG-Padding Bottom:</source>
+        <target>LG-Padding Unten:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingBottomLG.1">
+        <source>Padding of each Article (Bottom)</source>
+        <target>Padding jedes Artikels (unten)</target>
+      </trans-unit>
+
+      <trans-unit id="tl_layout.paddingBottomXL.0">
+        <source>XL-Padding Bottom:</source>
+        <target>XL-Padding Unten:</target>
+      </trans-unit>
+      <trans-unit id="tl_layout.paddingBottomXL.1">
+        <source>Padding of each Article (Bottom)</source>
+        <target>Padding jedes Artikels (unten)</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

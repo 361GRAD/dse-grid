@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/default.php" source-language="en">
+    <body>
+      <trans-unit id="tl_article.visibility_legend">
+        <source>Visibility</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_hidden.0">
+        <source>Hide from:</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_hidden.1">
+        <source>Hides this article in the selected width.</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_hide_options.d-none">
+        <source>XS</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_hide_options.d-sm-none">
+        <source>SM</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_hide_options.d-md-none">
+        <source>MD</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_hide_options.d-lg-none">
+        <source>LG</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_hide_options.d-xl-none">
+        <source>XL</source>
+      </trans-unit>
+
+      <trans-unit id="tl_article.article_visible.0">
+        <source>Show from:</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_visible.1">
+        <source>Show this element in the selected width.</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_visible_options.d-block">
+        <source>XS</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_visible_options.d-sm-block">
+        <source>SM</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_visible_options.d-md-block">
+        <source>MD</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_visible_options.d-lg-block">
+        <source>LG</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_visible_options.d-xl-block">
+        <source>XL</source>
+      </trans-unit>
+
+      <trans-unit id="tl_article.article_elements_setting_legend">
+        <source>Element settings</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_no_gutters.0">
+        <source>Remove spacing:</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_no_gutters.1">
+        <source>Remove all spacing of the elements inside this article.</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_no_gutters_options.no-gutters">
+        <source>remove</source>
+      </trans-unit>
+
+      <trans-unit id="tl_article.article_elements_vertical_alignment.0">
+        <source>Vertical position:</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_vertical_alignment.1">
+        <source>Define the vertical position of the elements inside this article.</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_vertical_alignment_options.align-items-start">
+        <source>top</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_vertical_alignment_options.align-items-center">
+        <source>center</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_vertical_alignment_options.align-items-end">
+        <source>bottom</source>
+      </trans-unit>
+
+      <trans-unit id="tl_article.article_elements_vertical_alignment_width.0">
+        <source>Vertical position from:</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_vertical_alignment_width.1">
+        <source>Width from where the vertical position is set.</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_vertical_alignment_width_options.sm">
+        <source>SM</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_vertical_alignment_width_options.md">
+        <source>MD</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_vertical_alignment_width_options.lg">
+        <source>LG</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_vertical_alignment_width_options.xl">
+        <source>XL</source>
+      </trans-unit>
+
+      <trans-unit id="tl_article.article_elements_horizontal_alignment.0">
+        <source>Horizontal position:</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_horizontal_alignment.1">
+        <source>Define the horizontal position of the elements inside this article.</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_horizontal_alignment_options.justify-content-start">
+        <source>left</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_horizontal_alignment_options.justify-content-center">
+        <source>center</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_horizontal_alignment_options.justify-content-end">
+        <source>right</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_horizontal_alignment_options.justify-content-around">
+        <source>centerd indented</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_horizontal_alignment_options.justify-content-between">
+        <source>justified seperated</source>
+      </trans-unit>
+
+      <trans-unit id="tl_article.article_elements_horizontal_alignment_width.0">
+        <source>Horizontal position from:</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_horizontal_alignment_width.1">
+        <source>Width from where the vertical position is set.</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_horizontal_alignment_width_options.sm">
+        <source>SM</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_horizontal_alignment_width_options.md">
+        <source>MD</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_horizontal_alignment_width_options.lg">
+        <source>LG</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_horizontal_alignment_width_options.xl">
+        <source>XL</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
