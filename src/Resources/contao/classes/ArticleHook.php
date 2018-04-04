@@ -14,6 +14,8 @@
 
 namespace Dse\ElementsBundle\DseGridExtension\Resources\contao\classes;
 
+use Contao\FilesModel;
+
 class ArticleHook extends \System {
 
 	public function insertCustomTemplate($tpl, $data, $article)
@@ -45,6 +47,22 @@ class ArticleHook extends \System {
             // article width
             if($tpl->article_width) {
                 $tpl->article_width = ' '.$tpl->article_width;
+            }
+
+            // article background image
+            $tpl->article_style = "";
+            $imagePath = FilesModel::findByUuid($tpl->article_image_bg)->path;
+            if(!empty($tpl->article_image_bg) && !empty($imagePath)) {
+                $tpl->article_style .= "background-image: url('".$imagePath."');";
+            }
+            if($tpl->article_image_bg_position) {
+                $tpl->article_style .= "background-position: ".str_replace("_", " ", $tpl->article_image_bg_position).";";
+            }
+            if($tpl->article_image_bg_repeat) {
+                $tpl->article_style .= "background-repeat: $tpl->article_image_bg_repeat;";
+            }
+            if($tpl->article_image_bg_size) {
+                $tpl->article_style .= "background-size: $tpl->article_image_bg_size;";
             }
 
             // article vertical padding

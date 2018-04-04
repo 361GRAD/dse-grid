@@ -15,7 +15,7 @@
 /**
  * Add palettes to tl_article
  */
-$GLOBALS['TL_DCA']['tl_article']['palettes']['default'] = str_replace('cssID;','cssID;{visibility_legend:hide},article_hidden,article_visible;{article_settings_legend:hide},article_width,article_padding_top_bottom,article_padding_top_bottom_width,article_padding_right_left,article_padding_right_left_width;{article_elements_setting_legend:hide},article_elements_no_gutters,article_elements_vertical_alignment,article_elements_vertical_alignment_width,article_elements_horizontal_alignment,article_elements_horizontal_alignment_width;', $GLOBALS['TL_DCA']['tl_article']['palettes']['default']);
+$GLOBALS['TL_DCA']['tl_article']['palettes']['default'] = str_replace('cssID;','cssID;{visibility_legend:hide},article_hidden,article_visible;{article_image_bg_legend:hide},article_image_bg,article_image_bg_position,article_image_bg_repeat,article_image_bg_size;{article_settings_legend:hide},article_width,article_padding_top_bottom,article_padding_top_bottom_width,article_padding_right_left,article_padding_right_left_width;{article_elements_setting_legend:hide},article_elements_width,article_elements_no_gutters,article_elements_vertical_alignment,article_elements_vertical_alignment_width,article_elements_horizontal_alignment,article_elements_horizontal_alignment_width;', $GLOBALS['TL_DCA']['tl_article']['palettes']['default']);
 
 /**
  * Add fields to tl_article
@@ -81,6 +81,72 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['article_width'] = array(
         'tl_class' => 'w50 clr'
     ),
     'sql' => "varchar(255) NOT NULL default ''"
+);
+
+// ARTICLE IMAGE
+$GLOBALS['TL_DCA']['tl_article']['fields']['article_image_bg'] = array(
+    'label'     => &$GLOBALS['TL_LANG']['tl_article']['article_image_bg'],
+    'inputType' => 'fileTree',
+    'eval'      => array(
+        'filesOnly'=>true,
+        'extensions'=>Config::get('validImageTypes'),
+        'tl_class'=>'clr w50 wizard autoheight'
+    ),
+    'sql'       => "binary(16) NULL"
+);
+$GLOBALS['TL_DCA']['tl_article']['fields']['article_image_bg_position'] = array(
+    'label' => &$GLOBALS['TL_LANG']['tl_article']['article_image_bg_position'],
+    'inputType' => 'select',
+    'options' => array(
+        'left_top',
+        'left_center',
+        'left_bottom',
+        'center_top',
+        'center_center',
+        'center_bottom',
+        'right_top',
+        'right_center',
+        'right_bottom'
+    ),
+    'reference' => &$GLOBALS['TL_LANG']['tl_article']['article_image_bg_position_options'],
+    'eval' => array(
+        'includeBlankOption' => true,
+        'tl_class' => 'w50 clr'
+    ),
+    'sql' => "varchar(32) NOT NULL default ''"
+);
+$GLOBALS['TL_DCA']['tl_article']['fields']['article_image_bg_repeat'] = array(
+    'label'     => &$GLOBALS['TL_LANG']['tl_article']['article_image_bg_repeat'],
+    'inputType' => 'select',
+    'options'   => array(
+        'repeat',
+        'repeat-x',
+        'repeat-y',
+        'no-repeat',
+        'space',
+        'round'
+    ),
+    'reference' => &$GLOBALS['TL_LANG']['tl_article']['article_image_bg_repeat_options'],
+    'eval'      => array(
+        'includeBlankOption'=>true,
+        'tl_class'=>'w50'
+    ),
+    'sql'       => "varchar(32) NOT NULL default ''"
+);
+$GLOBALS['TL_DCA']['tl_article']['fields']['article_image_bg_size'] = array(
+    'label' => &$GLOBALS['TL_LANG']['tl_article']['article_image_bg_size'],
+    'inputType' => 'select',
+    'options' => array(
+        'auto',
+        'cover',
+        'contain'
+    ),
+    'reference' => &$GLOBALS['TL_LANG']['tl_article']['article_image_bg_size_options'],
+    'eval' => array(
+        'includeBlankOption' => true,
+        'tl_class' => 'w50 clr'
+    ),
+    'sql' => "varchar(32) NOT NULL default ''"
 );
 
 // ARTICLE PADDING
@@ -170,6 +236,16 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['article_padding_right_left_width'] =
 );
 
 // ARTICLE-ELEMENTS
+$GLOBALS['TL_DCA']['tl_article']['fields']['article_elements_width'] = array(
+    'label' => &$GLOBALS['TL_LANG']['tl_article']['article_elements_width'],
+    'exclude' => true,
+    'search' => false,
+    'inputType' => 'checkbox',
+    'eval' => array(
+        'tl_class' => 'w50 clr'
+    ),
+    'sql' => "char(1) NOT NULL default ''"
+);
 $GLOBALS['TL_DCA']['tl_article']['fields']['article_elements_no_gutters'] = array(
     'label' => &$GLOBALS['TL_LANG']['tl_article']['article_elements_no_gutters'],
     'exclude' => true,

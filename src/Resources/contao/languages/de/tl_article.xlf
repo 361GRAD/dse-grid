@@ -81,9 +81,118 @@
         <target>volle Breite</target>
       </trans-unit>
 
+      <trans-unit id="tl_article.article_image_bg_legend">
+        <source>Article background image</source>
+        <target>Artikel-Hintergrundbild</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg.0">
+        <source>Background image</source>
+        <target>Hintergrundbild</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg.1">
+        <source>Select a background image for this article.</source>
+        <target>Hintergrundbild für diesen Artikel.</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_repeat.0">
+        <source>Repeat:</source>
+        <target>Wiederholung:</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_repeat_options.repeat">
+        <source>vertically and horizontally</source>
+        <target>vertikal und horizontal</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_repeat_options.repeat-x">
+        <source>horizontally</source>
+        <target>horizontal</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_repeat_options.repeat-y">
+        <source>vertically</source>
+        <target>vertikal</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_repeat_options.no-repeat">
+        <source>no repeat</source>
+        <target>keine Wiederholung</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_repeat_options.space">
+        <source>without clipping (with gaps)</source>
+        <target>ohne Beschneidung (mit Leerraum)</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_repeat_options.round">
+        <source>squished or stretched to fill the space (no gaps)</source>
+        <target>gequetscht oder gestreckt (kein Leerraum)</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_repeat.1">
+        <source>Select the repaet of the image</source>
+        <target>Wiederholung des Hintergrundbilds für diesen Artikel.</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_position.0">
+        <source>Position:</source>
+        <target>Position:</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_position_options.left_top">
+        <source>left top</source>
+        <target>links oben</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_position_options.left_center">
+        <source>left center</source>
+        <target>links mittig</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_position_options.left_bottom">
+        <source>left bottom</source>
+        <target>links unten</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_position_options.center_top">
+        <source>center top</source>
+        <target>mittig oben</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_position_options.center_center">
+        <source>center center</source>
+        <target>mittig mittig</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_position_options.center_bottom">
+        <source>mittig bottom</source>
+        <target>mittig unten</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_position_options.right_top">
+        <source>right top</source>
+        <target>rechts oben</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_position_options.right_center">
+        <source>right center</source>
+        <target>rechts mittig</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_position_options.right_bottom">
+        <source>right bottom</source>
+        <target>rechts unten</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_position.1">
+        <source>Select the position of the background image.</source>
+        <target>Auswahl der Position für das Hintergrundbild.</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_size.0">
+        <source>Size:</source>
+        <target>Größe:</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_size_options.auto">
+        <source>auto</source>
+        <target>automatisch</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_size_options.cover">
+        <source>cover</source>
+        <target>füllend</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_size_options.contain">
+        <source>contain</source>
+        <target>passend</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_image_bg_size.1">
+        <source>Select the size of the background image.</source>
+        <target>Auswahl der Größe für das Hintergrundbild.</target>
+      </trans-unit>
+
       <trans-unit id="tl_article.article_padding_top_bottom.0">
         <source>Vertical padding:</source>
-        <target>Vertikaler Abstand</target>
+        <target>Vertikaler Abstand:</target>
       </trans-unit>
       <trans-unit id="tl_article.article_padding_top_bottom.1">
         <source>Vertical padding for this article.</source>
@@ -141,7 +250,7 @@
 
       <trans-unit id="tl_article.article_padding_right_left.0">
         <source>Horizontal padding:</source>
-        <target>Horizontaler Abstand</target>
+        <target>Horizontaler Abstand:</target>
       </trans-unit>
       <trans-unit id="tl_article.article_padding_right_left.1">
         <source>Horizontal padding for this article.</source>
@@ -200,6 +309,14 @@
       <trans-unit id="tl_article.article_elements_setting_legend">
         <source>Element settings</source>
         <target>Element-Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_width.0">
+        <source>content width</source>
+        <target>Inhaltsbreite</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_elements_width.1">
+        <source>Limit the width of the inner elements. (only if article width: <em>full width</em>)</source>
+        <target>Breite der Elemente begrenzen. (nur bei Artikelbreite: <em>volle Breite</em>)</target>
       </trans-unit>
       <trans-unit id="tl_article.article_elements_no_gutters.0">
         <source>Remove spacing:</source>
