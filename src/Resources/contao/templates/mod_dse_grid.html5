@@ -48,13 +48,15 @@
 
         <?php $this->block('content'); ?>
         <?php if($this->article_width && $this->article_elements_width): ?>
-        <div class="container">
-            <div class="row<?= ($this->article_elements_no_gutters) ? $this->article_elements_no_gutters : '' ?><?= ($this->article_elements_vertical_alignment) ? $this->article_elements_vertical_alignment : '' ?><?= ($this->article_elements_vertical_alignment) ? $this->article_elements_horizontal_alignment : '' ?>">
-                <?= implode('', $this->elements) ?>
+        <div class="bg_wrapper">
+            <div class="container">
+                <div class="row<?= ($this->article_elements_no_gutters) ? $this->article_elements_no_gutters : '' ?><?= ($this->article_elements_vertical_alignment) ? $this->article_elements_vertical_alignment : '' ?><?= ($this->article_elements_horizontal_alignment) ? $this->article_elements_horizontal_alignment : '' ?>">
+                    <?= implode('', $this->elements) ?>
+                </div>
             </div>
         </div>
         <?php else: ?>
-        <div class="row<?= ($this->article_elements_no_gutters) ? $this->article_elements_no_gutters : '' ?><?= ($this->article_elements_vertical_alignment) ? $this->article_elements_vertical_alignment : '' ?><?= ($this->article_elements_vertical_alignment) ? $this->article_elements_horizontal_alignment : '' ?>">
+        <div class="row<?= ($this->article_elements_no_gutters) ? $this->article_elements_no_gutters : '' ?><?= ($this->article_elements_vertical_alignment) ? $this->article_elements_vertical_alignment : '' ?><?= ($this->article_elements_horizontal_alignment) ? $this->article_elements_horizontal_alignment : '' ?>">
             <?= implode('', $this->elements) ?>
         </div>
         <?php endif; ?>
