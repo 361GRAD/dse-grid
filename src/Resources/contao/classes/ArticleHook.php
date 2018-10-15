@@ -32,17 +32,21 @@ class ArticleHook extends \System {
 
 			// article_hidden
             $article_hidden = '';
-            foreach(unserialize($tpl->article_hidden) as $value) {
-                $article_hidden .= ' '.$value;
+            if($tpl->article_hidden != '') {
+                foreach(unserialize($tpl->article_hidden) as $value) {
+                    $article_hidden .= ' '.$value;
+                }
+                $tpl->article_hidden = $article_hidden;
             }
-            $tpl->article_hidden = $article_hidden;
 
             // article_visible
             $article_visible = '';
-            foreach(unserialize($tpl->article_visible) as $value) {
-                $article_visible .= ' '.$value;
+            if($tpl->article_visible != '') {
+                foreach (unserialize($tpl->article_visible) as $value) {
+                    $article_visible .= ' ' . $value;
+                }
+                $tpl->article_visible = $article_visible;
             }
-            $tpl->article_visible = $article_visible;
 
             // article width
             if($tpl->article_width) {

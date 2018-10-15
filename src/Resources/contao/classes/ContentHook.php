@@ -99,7 +99,7 @@ class ContentHook extends \Frontend {
             // add classes to element object
 			if($classes != ''){
 				$arrCss = \Contao\StringUtil::deserialize($objElement->cssID);
-				$arrCss[1] .= $classes;
+				$arrCss[1] = $arrCss[1].$classes;
 				$newObjElement->cssID = $arrCss;
 			}
 	    $strBuffer = $newObjElement->generate();
@@ -134,7 +134,6 @@ class ContentHook extends \Frontend {
     }
 
     private function checkCArticles() {
-//        echo "checkCArticles\n";
         if($objLayout->activateCArticles){
             return true;
         }
