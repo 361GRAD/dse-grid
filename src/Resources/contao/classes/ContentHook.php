@@ -31,7 +31,7 @@ class ContentHook extends \Frontend {
 			$strClass = $this->findContentElement($objElement->type);
 			$newObjElement = new $strClass($objElement);
 
-			$classes = 'col';
+			$classes = ' col';
 
 			// grid classes
             $arrClasses = [
