@@ -31,7 +31,7 @@ class ContentHook extends \Frontend {
 			$strClass = $this->findContentElement($objElement->type);
 			$newObjElement = new $strClass($objElement);
 
-			$classes = ' col';
+			$classes = 'col';
 
 			// grid classes
             $arrClasses = [
@@ -98,8 +98,14 @@ class ContentHook extends \Frontend {
 
             // add classes to element object
 			if($classes != ''){
-				$arrCss = \Contao\StringUtil::deserialize($objElement->cssID);
-				$arrCss[1] = $arrCss[1].$classes;
+                $arrCss = \Contao\StringUtil::deserialize($objElement->cssID);
+
+                if($arrCss[1]) {
+                    $arrCss[1] = $arrCss[1].' '.$classes;
+                } else {
+                    $arrCss[1] = $arrCss[1].$classes;
+                }
+
 				$newObjElement->cssID = $arrCss;
 			}
 	    $strBuffer = $newObjElement->generate();

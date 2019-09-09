@@ -20,57 +20,57 @@
 $GLOBALS['TL_DCA']['tl_content']['fields']['grid_xs'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['grid_xs'],
     'inputType' => 'select',
-    'options'   => range(1, 12),
+    'options_callback'   => array('tl_content_grid', 'colArray'),
     'eval'      => array(
         'includeBlankOption' => true,
         'mandatory' => false,
         'tl_class' => 'w50 clr'
     ),
-    'sql'       => "varchar(2) NOT NULL default '12'"
+    'sql'       => "varchar(4) NOT NULL default '12'"
 );
 $GLOBALS['TL_DCA']['tl_content']['fields']['grid_sm'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['grid_sm'],
     'inputType' => 'select',
-    'options'   => range(1, 12),
+    'options_callback'   => array('tl_content_grid', 'colArray'),
     'eval'      => array(
         'includeBlankOption' => true,
         'mandatory' => false,
         'tl_class' => 'w50 clr'
     ),
-    'sql'       => "varchar(2) NOT NULL default ''"
+    'sql'       => "varchar(4) NOT NULL default ''"
 );
 $GLOBALS['TL_DCA']['tl_content']['fields']['grid_md'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['grid_md'],
     'inputType' => 'select',
-    'options'   => range(1, 12),
+    'options_callback'   => array('tl_content_grid', 'colArray'),
     'eval'      => array(
         'includeBlankOption' => true,
         'mandatory' => false,
         'tl_class' => 'w50'
     ),
-    'sql'       => "varchar(2) NOT NULL default ''"
+    'sql'       => "varchar(4) NOT NULL default ''"
 );
 $GLOBALS['TL_DCA']['tl_content']['fields']['grid_lg'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['grid_lg'],
     'inputType' => 'select',
-    'options'   => range(1, 12),
+    'options_callback'   => array('tl_content_grid', 'colArray'),
     'eval'      => array(
         'includeBlankOption' => true,
         'mandatory' => false,
         'tl_class' => 'w50 clr'
     ),
-    'sql'       => "varchar(2) NOT NULL default ''"
+    'sql'       => "varchar(4) NOT NULL default ''"
 );
 $GLOBALS['TL_DCA']['tl_content']['fields']['grid_xl'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['grid_xl'],
     'inputType' => 'select',
-    'options'   => range(1, 12),
+    'options_callback'   => array('tl_content_grid', 'colArray'),
     'eval'      => array(
         'includeBlankOption' => true,
         'mandatory' => false,
         'tl_class' => 'w50'
     ),
-    'sql'       => "varchar(2) NOT NULL default ''"
+    'sql'       => "varchar(4) NOT NULL default ''"
 );
 
 // VISIBILITY
@@ -322,5 +322,19 @@ class tl_content_grid extends tl_content
 
             $GLOBALS['TL_DCA']['tl_content']['palettes'][$key] = $value . ';{grid_legend:hide},grid_xs,grid_sm,grid_md,grid_lg,grid_xl;{grid_visible_legend:hide},grid_hidden,grid_visible;{col_no_padding_legend:hide},col_no_padding;{grid_offset_legend:hide},offset_xs,offset_sm,offset_md,offset_lg,offset_xl;{grid_order_legend:hide},order_xs,order_sm,order_md,order_lg,order_xl;{element_position_label},element_vertical_alignment,element_vertical_alignment_width';
         }
+    }
+
+    /**
+     * Option callback for columns
+     *
+     * return Array $range
+     */
+    public function colArray()
+    {
+        $range = range(1, 12);
+
+        array_push($range, "auto");
+
+        return $range;
     }
 }
