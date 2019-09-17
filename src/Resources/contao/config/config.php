@@ -13,7 +13,8 @@
  * Hooks
  */
 if (TL_MODE == 'BE') {
-    $GLOBALS['TL_HOOKS']['loadDataContainer'][]	= array('Dse\\ElementsBundle\\DseGridExtension\\Resources\\contao\\classes\\ContentHook', 'appendGridComponentsCallback');
+    $GLOBALS['TL_HOOKS']['loadDataContainer'][]	=   array('Dse\\ElementsBundle\\DseGridExtension\\Resources\\contao\\classes\\ContentHook', 'appendGridComponentsCallback');
+    $GLOBALS['TL_HOOKS']['getContentElement'][]	    = array('Dse\\ElementsBundle\\DseGridExtension\\Resources\\contao\\classes\\BeContentHook', 'insertCustomGrid');
 }
 
 if(TL_MODE == 'FE'){
