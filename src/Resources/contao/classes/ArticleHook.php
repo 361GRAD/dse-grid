@@ -118,5 +118,15 @@ class ArticleHook extends \System {
 			$template->setData($tpl->getData());
 			$article->Template = $template;
 		}
-	}
+    }
+    
+    private function cHexRgba($color, $opacity = 1) {
+	    if(strlen($color) == 6) {
+            $split = str_split($color, 2);
+            $r = hexdec($split[0]);
+            $g = hexdec($split[1]);
+            $b = hexdec($split[2]);
+            return "rgba(" . $r . ", " . $g . ", " . $b . ", ". $opacity . ")";
+        }
+    }
 }
