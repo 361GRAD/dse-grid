@@ -69,6 +69,15 @@ class ArticleHook extends \System {
                 $tpl->article_style .= "background-size: $tpl->article_image_bg_size;";
             }
 
+            // article background color
+            if(!empty($tpl->article_bg_color)) {
+                if($tpl->article_bg_color_opacity) {
+                    $tpl->article_style .= "background-color: ".$this->cHexRgba($tpl->article_bg_color, ($tpl->article_bg_color_opacity / 100)).";";
+                } else {
+                    $tpl->article_style .= "background-color: #".$tpl->article_bg_color.";";
+                }
+            }
+
             // article vertical padding
             if($tpl->article_padding_top_bottom) {
                 $tpl->article_padding_top_bottom = ' '.$tpl->article_padding_top_bottom;

@@ -190,6 +190,27 @@
         <target>Auswahl der Größe für das Hintergrundbild.</target>
       </trans-unit>
 
+      <trans-unit id="tl_article.article_color_bg_legend">
+        <source>Article background color</source>
+        <target>Artikel-Hintergrundfarbe</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_bg_color.0">
+        <source>Color:</source>
+        <target>Farbe:</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_bg_color.1">
+        <source>Select the color of the background color.</source>
+        <target>Auswahl der Farbe für den Hintergrund.</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_bg_color_opacity.0">
+        <source>Opacity:</source>
+        <target>Deckkraft:</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_bg_color_opacity.1">
+        <source>Select (%-value) the opacity of the background color.</source>
+        <target>Auswahl (%-Wert) der Deckkraft für die Hintergrundfarbe.</target>
+      </trans-unit>
+
       <trans-unit id="tl_article.article_padding_top_bottom.0">
         <source>Vertical padding:</source>
         <target>Vertikaler Abstand:</target>

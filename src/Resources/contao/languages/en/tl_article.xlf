@@ -144,6 +144,22 @@
         <source>Select the size of the background image.</source>
       </trans-unit>
 
+      <trans-unit id="tl_article.article_color_bg_legend">
+        <source>Article background color</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_bg_color.0">
+        <source>Color:</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_bg_color.1">
+        <source>Select the color of the background color.</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_bg_color_opacity.0">
+        <source>Opacity:</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_bg_color_opacity.1">
+        <source>Select (%-value) the opacity of the background color.</source>
+      </trans-unit>
+
       <trans-unit id="tl_article.article_padding_top_bottom.0">
         <source>Vertical padding:</source>
       </trans-unit>
