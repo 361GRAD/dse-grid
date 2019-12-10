@@ -16,6 +16,51 @@
 /**
  * Add palettes to tl_content
  */
+// BACKGROUND COLOR
+// ARTICLE BACKGROUND COLOR
+$GLOBALS['TL_DCA']['tl_content']['fields']['ce_bg_color'] = array (
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['ce_bg_color'],
+    'inputType' => 'text',
+    'eval'      => array(
+        'minlength'=>6,
+        'maxlength'=>6,
+        'colorpicker'=>true,
+        'isHexColor'=>true,
+        'decodeEntities'=>true,
+        'tl_class'=>'clr w50 wizard'
+    ),
+    'sql'       => "varchar(64) NOT NULL default ''"
+);
+$GLOBALS['TL_DCA']['tl_content']['fields']['ce_bg_color_opacity'] = array (
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['ce_bg_color_opacity'],
+    'exclude' => true,
+    'search' => false,
+    'inputType' => 'text',
+    'eval' => array(
+        'mandatory' => false,
+        'rgxp' => 'prcnt',
+        'maxlength' => 3,
+        'tl_class' => 'w50'
+    ),
+    'sql' => "SMALLINT(3) unsigned NOT NULL default 100"
+);
+$GLOBALS['TL_DCA']['tl_content']['fields']['ce_bg_style'] = array (
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['ce_bg_style'],
+    'inputType' => 'select',
+    'options'   => array(
+        'dark',
+        'light'
+    ),
+    'default' => 'dark',
+    'reference' => &$GLOBALS['TL_LANG']['tl_content']['ce_bg_style'],
+    'eval'      => array(
+        'includeBlankOption' => false,
+        'mandatory' => false,
+        'tl_class' => 'w50 clr'
+    ),
+    'sql'       => "varchar(12) NOT NULL default ''"
+);
+
 // GRID
 $GLOBALS['TL_DCA']['tl_content']['fields']['grid_xs'] = array (
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['grid_xs'],
@@ -320,7 +365,7 @@ class tl_content_grid extends tl_content
                 continue;
             }
 
-            $GLOBALS['TL_DCA']['tl_content']['palettes'][$key] = $value . ';{grid_legend:hide},grid_xs,grid_sm,grid_md,grid_lg,grid_xl;{grid_visible_legend:hide},grid_hidden,grid_visible;{col_no_padding_legend:hide},col_no_padding;{grid_offset_legend:hide},offset_xs,offset_sm,offset_md,offset_lg,offset_xl;{grid_order_legend:hide},order_xs,order_sm,order_md,order_lg,order_xl;{element_position_label},element_vertical_alignment,element_vertical_alignment_width';
+            $GLOBALS['TL_DCA']['tl_content']['palettes'][$key] = $value . ';{bg_color_legend:hide},ce_bg_color,ce_bg_color_opacity,ce_bg_style;{grid_legend:hide},grid_xs,grid_sm,grid_md,grid_lg,grid_xl;{grid_visible_legend:hide},grid_hidden,grid_visible;{col_no_padding_legend:hide},col_no_padding;{grid_offset_legend:hide},offset_xs,offset_sm,offset_md,offset_lg,offset_xl;{grid_order_legend:hide},order_xs,order_sm,order_md,order_lg,order_xl;{element_position_label},element_vertical_alignment,element_vertical_alignment_width';
         }
     }
 

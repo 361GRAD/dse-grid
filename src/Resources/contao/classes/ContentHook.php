@@ -15,6 +15,17 @@
 namespace Dse\ElementsBundle\DseGridExtension\Resources\contao\classes;
 
 class ContentHook extends \Frontend {
+
+    private function cHexRgba($color, $opacity = 1) {
+	    if(strlen($color) == 6) {
+            $split = str_split($color, 2);
+            $r = hexdec($split[0]);
+            $g = hexdec($split[1]);
+            $b = hexdec($split[2]);
+            return "rgba(" . $r . ", " . $g . ", " . $b . ", ". $opacity . ")";
+        }
+    }
+
 	/**
 	 * [insertCustomGrid description]
 	 * @param  Database_Result $objElement
@@ -56,7 +67,17 @@ class ContentHook extends \Frontend {
 				if($objElement->$key != '' && $objElement->$key != -1){
 					$classes .= ' '.$classPart.$objElement->$key;
 				}
-			}
+            }
+
+            // background color
+            $ce_stlye = "";
+            if(!empty($objElement->ce_bg_color)) {
+                if($objElement->ce_bg_color_opacity) {
+                    $ce_stlye .= "background-color: ".$this->cHexRgba($objElement->ce_bg_color, ($objElement->ce_bg_color_opacity / 100)).";";
+                } else {
+                    $ce_stlye .= "background-color: #".$objElement->ce_bg_color.";";
+                }
+            }
 
 			// grid visible
 			if($objElement->grid_visible != ''){
@@ -108,8 +129,18 @@ class ContentHook extends \Frontend {
 
 				$newObjElement->cssID = $arrCss;
 			}
-	    $strBuffer = $newObjElement->generate();
-	  }
+        $strBuffer = $newObjElement->generate();
+
+        // add bg color to new element
+        if(!empty($ce_stlye)) {
+            $bgStyle = "";
+            if($objElement->ce_bg_style) {
+                $bgStyle = " bg ".$objElement->ce_bg_style;
+            }
+            $strBuffer = substr_replace( $strBuffer, '<div class="ce_bg_wrapper'.$bgStyle.'" style="'.$ce_stlye.'">', strpos($strBuffer, ">")+1, 0 );
+            $strBuffer .= "</div>";
+        }
+    }
 
     return $strBuffer;
 	}

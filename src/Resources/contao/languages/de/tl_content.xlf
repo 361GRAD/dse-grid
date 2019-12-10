@@ -2,6 +2,46 @@
 <xliff version="1.1">
 	<file datatype="php" original="src/Resources/contao/languages/en/default.php" source-language="en" target-langue="de">
     <body>
+      <trans-unit id="tl_content.bg_color_legend">
+          <source>Background color</source>
+        <target>Hintergrundfarbe</target>
+      </trans-unit>
+
+      <trans-unit id="tl_content.ce_bg_color.0">
+        <source>Color:</source>
+        <target>Farbe:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.ce_bg_color.1">
+        <source>Select the color of the background color.</source>
+        <target>Auswahl der Farbe für den Hintergrund.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_content.ce_bg_color_opacity.0">
+        <source>Opacity:</source>
+        <target>Deckkraft:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.ce_bg_color_opacity.1">
+        <source>Select (%-value) the opacity of the background color.</source>
+        <target>Auswahl (%-Wert) der Deckkraft für die Hintergrundfarbe.</target>
+      </trans-unit>
+
+      <trans-unit id="tl_content.ce_bg_style.0">
+        <source>Background style:</source>
+        <target>Hintergrundstil:</target>
+      </trans-unit>
+      <trans-unit id="tl_content.ce_bg_style.1">
+        <source>Select the style of the background here.</source>
+        <target>Wählen Sie hier die Textfarbe aus.</target>
+      </trans-unit>
+      <trans-unit id="tl_content.ce_bg_style.dark">
+        <source>dark</source>
+        <target>dunkel</target>
+      </trans-unit>
+      <trans-unit id="tl_content.ce_bg_style.light">
+        <source>light</source>
+        <target>hell</target>
+      </trans-unit>
+
       <trans-unit id="tl_content.grid_legend">
           <source>Grid settings</source>
         <target>Grid-Einstellungen</target>
