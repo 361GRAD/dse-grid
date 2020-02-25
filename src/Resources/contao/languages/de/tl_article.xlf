@@ -219,6 +219,14 @@
         <source>Vertical padding for this article.</source>
         <target>Vertikaler Abstand für diesen Artikel.</target>
       </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_options.pt-0">
+        <source>remove top padding</source>
+        <target>nur oben entfernen</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_options.pb-0">
+        <source>remove bottom padding</source>
+        <target>nur unten entfernen</target>
+      </trans-unit>
       <trans-unit id="tl_article.article_padding_top_bottom_options.py-0">
         <source>remove padding</source>
         <target>entfernen</target>

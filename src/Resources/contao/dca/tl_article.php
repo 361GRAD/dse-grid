@@ -186,6 +186,8 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['article_padding_top_bottom'] = array
     'search' => false,
     'inputType' => 'select',
     'options' => array(
+        'pt-0',
+        'pb-0',
         'py-0',
         'py-1',
         'py-2',

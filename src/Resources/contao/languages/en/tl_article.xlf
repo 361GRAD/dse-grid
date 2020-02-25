@@ -166,6 +166,12 @@
       <trans-unit id="tl_article.article_padding_top_bottom.1">
         <source>Vertical padding for this article.</source>
       </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_options.pt-0">
+        <source>remove top padding</source>
+      </trans-unit>
+      <trans-unit id="tl_article.article_padding_top_bottom_options.pb-0">
+        <source>remove bottom padding</source>
+      </trans-unit>
       <trans-unit id="tl_article.article_padding_top_bottom_options.py-0">
         <source>remove padding</source>
       </trans-unit>
