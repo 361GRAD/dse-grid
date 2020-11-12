@@ -210,6 +210,22 @@
         <source>Select (%-value) the opacity of the background color.</source>
         <target>Auswahl (%-Wert) der Deckkraft für die Hintergrundfarbe.</target>
       </trans-unit>
+      <trans-unit id="tl_article.article_bg_color_variant.0">
+        <source>Background variant</source>
+        <target>Hintergrundvariante</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_bg_color_variant.1">
+        <source>Select the background variant here.</source>
+        <target>Hier können Sie die Hintergrundvariante wählen.</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_bg_color_variant_options.light">
+        <source>light</source>
+        <target>hell</target>
+      </trans-unit>
+      <trans-unit id="tl_article.article_bg_color_variant_options.dark">
+        <source>dark</source>
+        <target>dunkel</target>
+      </trans-unit>
 
       <trans-unit id="tl_article.article_padding_top_bottom.0">
         <source>Vertical padding:</source>

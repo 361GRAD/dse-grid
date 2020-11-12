@@ -20,7 +20,7 @@
     <?php $this->endblock(); ?>
 
 <?php else: ?>
-    <div class="<?= $this->class ?> block<?= ($this->article_width) ? $this->article_width : '' ?><?= ($this->article_padding_top_bottom) ? $this->article_padding_top_bottom : '' ?><?= ($this->article_padding_right_left) ? $this->article_padding_right_left : '' ?><?= ($this->article_hidden) ? $this->article_hidden : '' ?><?= ($this->article_visible) ? $this->article_visible : '' ?>"<?= $this->cssID ?><?php if ($this->style || $this->article_style): ?> style="<?= $this->article_style ?><?= $this->style ?>"<?php endif; ?>>
+    <div class="<?= $this->class ?> block<?= ($this->article_bg_color && $this->article_bg_color_variant) ? ' '.$this->article_bg_color_variant : '' ?><?= ($this->article_width) ? $this->article_width : '' ?><?= ($this->article_padding_top_bottom) ? $this->article_padding_top_bottom : '' ?><?= ($this->article_padding_right_left) ? $this->article_padding_right_left : '' ?><?= ($this->article_hidden) ? $this->article_hidden : '' ?><?= ($this->article_visible) ? $this->article_visible : '' ?>"<?= $this->cssID ?><?php if ($this->style || $this->article_style): ?> style="<?= $this->article_style ?><?= $this->style ?>"<?php endif; ?>>
         <?php if ($this->printable): ?>
             <?php $this->block('syndication'); ?>
             <!-- indexer::stop -->

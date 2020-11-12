@@ -15,7 +15,7 @@
 /**
  * Add palettes to tl_article
  */
-$GLOBALS['TL_DCA']['tl_article']['palettes']['default'] = str_replace('cssID;','cssID;{visibility_legend:hide},article_hidden,article_visible;{article_image_bg_legend:hide},article_image_bg,article_image_bg_position,article_image_bg_repeat,article_image_bg_size;{article_color_bg_legend:hide},article_bg_color,article_bg_color_opacity;{article_settings_legend:hide},article_width,article_padding_top_bottom,article_padding_top_bottom_width,article_padding_right_left,article_padding_right_left_width;{article_elements_setting_legend:hide},article_elements_width,article_elements_no_gutters,article_elements_vertical_alignment,article_elements_vertical_alignment_width,article_elements_horizontal_alignment,article_elements_horizontal_alignment_width;', $GLOBALS['TL_DCA']['tl_article']['palettes']['default']);
+$GLOBALS['TL_DCA']['tl_article']['palettes']['default'] = str_replace('cssID;','cssID;{visibility_legend:hide},article_hidden,article_visible;{article_image_bg_legend:hide},article_image_bg,article_image_bg_position,article_image_bg_repeat,article_image_bg_size;{article_color_bg_legend:hide},article_bg_color,article_bg_color_opacity,article_bg_color_variant;{article_settings_legend:hide},article_width,article_padding_top_bottom,article_padding_top_bottom_width,article_padding_right_left,article_padding_right_left_width;{article_elements_setting_legend:hide},article_elements_width,article_elements_no_gutters,article_elements_vertical_alignment,article_elements_vertical_alignment_width,article_elements_horizontal_alignment,article_elements_horizontal_alignment_width;', $GLOBALS['TL_DCA']['tl_article']['palettes']['default']);
 
 /**
  * Add fields to tl_article
@@ -177,6 +177,25 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['article_bg_color_opacity'] = array
         'tl_class' => 'w50'
     ),
     'sql' => "SMALLINT(3) unsigned NOT NULL default 100"
+);
+$GLOBALS['TL_DCA']['tl_article']['fields']['article_bg_color_variant'] = array(
+    'label' => &$GLOBALS['TL_LANG']['tl_article']['article_bg_color_variant'],
+    'exclude' => true,
+    'search' => false,
+    'inputType' => 'select',
+    'options' => array(
+        'light',
+        'dark'
+    ),
+    'default' => 'light',
+    'reference' => &$GLOBALS['TL_LANG']['tl_article']['article_bg_color_variant_options'],
+    'eval' => array(
+        'includeBlankOption' => false,
+        'mandatory' => true,
+        'maxlength' => 255,
+        'tl_class' => 'w50 clr'
+    ),
+    'sql' => "char(5) NOT NULL default ''"
 );
 
 // ARTICLE PADDING
